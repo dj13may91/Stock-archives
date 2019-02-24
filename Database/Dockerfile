@@ -1,5 +1,5 @@
 FROM postgres:latest
-MAINTAINER lpradel
+MAINTAINER dj13may91
 
 ENV POSTGRES_USER postgres
 ENV POSTGRES_PASSWORD password
