@@ -1,0 +1,54 @@
+<div class="stock-container stock-column-header stock-display-border"
+     style="position: -webkit-sticky; position: sticky; top: 0;">
+  <div class="stock-table-display">
+    <div class="stock-table">
+      <label>Name</label>
+    </div>
+    <div class="stock-table">
+      <label>Date</label>
+    </div>
+    <div class="stock-table">
+      <label>Low</label>
+    </div>
+    <div class="stock-table">
+      <label>High</label>
+    </div>
+    <div class="stock-table">
+      <label>Open</label>
+    </div>
+    <div class="stock-table">
+      <label>Close</label>
+    </div>
+    <div class="stock-table">
+      <label>Volume</label>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="stocks">
+  <div class="stock-container stock-display-border" *ngFor="let stock of stocks">
+    <div class="stock-table-display">
+      <div class="stock-table">
+        <label>{{stock.symbol}}</label>
+      </div>
+      <div class="stock-table">
+        <label>{{stock.instance | dateConverter}}</label>
+      </div>
+      <div class="stock-table">
+        <label>{{stock.low}}</label>
+      </div>
+      <div class="stock-table">
+        <label>{{stock.high}}</label>
+      </div>
+      <div class="stock-table">
+        <label>{{stock.openValue}}</label>
+      </div>
+      <div class="stock-table">
+        <label>{{stock.close}}</label>
+      </div>
+      <div class="stock-table">
+        <label>{{stock.volume}}</label>
+      </div>
+    </div>
+  </div>
+</div>

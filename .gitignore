@@ -1,0 +1,5 @@
+target
+stock-archives-frontend/node_modules/
+stock-archives-frontend/e2e/
+.mvn
+.idea

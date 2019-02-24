@@ -1,0 +1,33 @@
+.triangle-border {
+  border:2px solid black;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+.stock-names {
+  float: left;
+  width: 120px;
+}
+.stock-details {
+  margin-left: 2%;
+  float: left;
+  width: 80%;
+}
+
+/*.stock-chart {*/
+  /*margin-left: 2%;*/
+  /*float: left;*/
+  /*width: 650px;*/
+  /*height: 550px;*/
+/*}*/
+
+/* Clear floats after the columns */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+

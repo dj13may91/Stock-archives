@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS public.Stock (
+  id       INTEGER PRIMARY KEY,
+  instance TIMESTAMP        NOT NULL,
+  open     DOUBLE PRECISION NOT NULL,
+  close    DOUBLE PRECISION NOT NULL,
+  low      DOUBLE PRECISION NOT NULL,
+  high     DOUBLE PRECISION NOT NULL,
+  volume   INTEGER          NOT NULL
+);

@@ -1,0 +1,76 @@
+spring:
+  jpa:
+    show-sql: true
+    generate-ddl: true
+  datasource:
+    initialization-mode: always
+    url: jdbc:postgresql://localhost:5432/pformlicense
+    defaultSchema: public
+    username: license
+    password: password
+    driver-class-name: org.postgresql.Driver
+hibernate:
+  dialect: org.hibernate.dialect.PostgreSQLDialect
+  show_sql: true
+#  hbm2ddl.auto: create
+#---
+#spring:
+#  profiles: local
+#  jpa:
+#    show-sql: true
+#  datasource:
+#    initialization-mode: always
+#    defaultSchema: licensemanagement
+#    username: license
+#    password: password
+#    url: jdbc:postgresql://localhost:5432/pformlicense
+#    driver-class-name: org.postgresql.Driver
+#debug: true
+#---
+#spring:
+#  profiles: dev
+#  jpa:
+#    show-sql: true
+#  datasource:
+#      initialization-mode: always
+#logging:
+#  file: logs/dev_app.log
+#  pattern:
+#    console: "%msg%n"
+#    file: "%msg%n"
+#  level:
+#    org.springframework.web: DEBUG
+#    com.veritas.service.api.controllers: DEBUG
+#db:
+#  defaultSchema: licensemanagement
+#  username: ${SECRET_DB_USERNAME}
+#  password: ${SECRET_DB_PASSWORD}
+#  url: jdbc:postgresql://postgres:5432/stock
+#  driver: org.postgresql.Driver
+#debug: true
+#---
+#spring:
+#  profiles: staging
+#  datasource:
+#      initialization-mode: always
+#logging:
+#  file: logs/dev_app.log
+#  pattern:
+#    console: "%msg%n"
+#    file: "%msg%n"
+#  level:
+#    org.springframework.web: INFO
+#    com.veritas.service.api.controllers: INFO
+#---
+#spring:
+#  profiles: production
+#  datasource:
+#      initialization-mode: always
+#logging:
+#  file: logs/production_app.log
+#  pattern:
+#    console: "%msg%n"
+#    file: "%msg%n"
+#  level:
+#    org.springframework.web: WARN
+#    com.veritas.service.api.controllers: WARN

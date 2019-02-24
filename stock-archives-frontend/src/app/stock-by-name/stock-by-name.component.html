@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="stock-names">
+    <h3>Stock Names</h3>
+    <div>
+      <input type="text" placeholder="search here" [(ngModel)]="searchText">
+      <label>Start date</label> <input type="date" [(ngModel)]="startDate">
+      <label>End date</label> <input type="date" [(ngModel)]="endDate">
+    </div>
+    <div *ngFor="let name of stockNames | textFilter : searchText">
+      <li routerLinkActive="active"><a routerLink="/stock" (click)="getStockDetails(name)">{{name}}</a></li>
+    </div>
+  </div>
+
+  <div class="stock-details">
+    <app-stock-charts class="triangle-border" [stockData]="stockDetails | dateFilter : startDate : endDate"></app-stock-charts>
+    <app-stock [stocks]="stockDetails | dateFilter : startDate : endDate"></app-stock>
+  </div>
+</div>

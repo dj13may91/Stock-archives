@@ -1,0 +1,28 @@
+.stock-column-header {
+  background-color: #e7e7e7;
+}
+
+.stock-container {
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 50px;
+}
+
+
+.stock-table-display, .stock-table, .stock-container {
+  display: flex;
+}
+
+.stock-display-border {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.stock-table {
+  margin-left: 1%;
+  margin-right: 1%;
+  align-items: center;
+}
+
+.stock-table {
+  width: 25%;
+}
